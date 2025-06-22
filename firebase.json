@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "source": ".",
+    "runtime": "python39",
+    "ignore": [
+      "venv",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      ".env",
+      ".env.local",
+      "__pycache__",
+      "*.pyc"
+    ]
+  }
+}

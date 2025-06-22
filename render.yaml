@@ -1,0 +1,12 @@
+services:
+  # A Flask API service
+  - type: web
+    name: easybets-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: RUNNING_IN_CLOUD
+        value: true
+      - key: DEBUG
+        value: false
